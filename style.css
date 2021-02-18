@@ -1,26 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
 
 @font-face {
-  font-family: "DINPRO-Bold";
-  src: url("./fonts/DINPro-Bold.woff2") format("woff2");
+  font-family: "AkzidenzGrotesk";
+  src: url("./fonts/AkzidenzGrotesk-BoldCond.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
 }
-@font-face {
-  font-family: "DINPRO-Light";
-  src: url("./fonts/DINPro-Light.woff2") format("woff2");
-  font-style: normal;
-  font-weight: lighter;
-}
 
-body {
+body,
+h2 {
   font-family: "Playfair Display", serif;
 }
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "DINPRO-Bold";
+  font-family: "AkzidenzGrotesk";
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "menu nombre imagen plasta"
+    "menu texto portafolio imagen2";
+}
+.menu {
+  grid-area: menu;
+}
+.nombre {
+  grid-area: nombre;
+  font-size: 120px;
+  line-height: 0.8;
+  align-self: end;
+}
+.texto {
+  grid-area: texto;
+}
+.portafolio {
+  grid-area: portafolio;
+  background-color: #865a51;
+  font-weight: normal;
+}
+.imagen {
+  grid-area: imagen;
+}
+.plasta {
+  grid-area: plasta;
+  background-color: #b7877d;
+}
+.imagen2 {
+  grid-area: imagen2;
+}
+
+/*
+h1 {
+  font-size: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.carusell {
+  margin: 20px;
+  display: flex;
+}
+
+.imagenes {
+  margin: 20px;
+}
+
+.contacto {
+  margin-top: 200px;
+  display: flex;
+  flex-grow: 2;
+}
+
+.contacto h1 {
+  margin-left: 0px;
+}
+
+.contactoimagen {
+  margin-top: 88px;
+  max-width: 40%;
+  margin-left: 45px;
+}
+
+.textocontacto {
+  margin-left: 82px;
+}
+*/
