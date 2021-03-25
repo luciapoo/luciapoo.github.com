@@ -29,12 +29,12 @@
 }
 
 /* Base */
-body,
-h2 {
+body {
   font-family: var(--font-textos);
 }
 
 h1,
+h2,
 h3,
 h4,
 h5,
@@ -44,14 +44,16 @@ h6 {
 
 h1 {
   font-size: var(--h1);
+  font-weight: 400;
 }
 
 h2 {
   font-size: var(--h2);
+  font-weight: 400;
 }
 h3 {
   font-size: var(--h3);
-  font-family: var(--font-textos);
+  font-weight: 400;
 }
 
 h4 {
@@ -74,7 +76,7 @@ h6 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  postition:fixed;
+  height: 100vh;
 }
 .top {
   display: flex;
@@ -89,19 +91,117 @@ h6 {
   color: white;
 }
 .titulo_estatico {
-  font-weight: 400;
-  color:white;
-  
-
+  color: #3b3b3b;
+  text-align: center;
+  width: 100%;
 }
 .titulo_banner {
-  background-color:blue;
-  
-
+  background-color: blue;
+  max-width: fit-content;
+  margin: 40vh 5vw 0 auto;
 }
 .titulo_banner h2 {
+  color: white;
 }
 .titulo_banner p {
+  color: white;
+}
+
+.manual_tipografico {
+  display: flex;
+  width: 100vw;
+}
+.manual_tipografico-descripcion {
+  flex: 0.1;
+  background-color: #6b6b4b;
+  color: white;
+  font-weight: 400;
+  padding-top: 20vh;
+}
+
+.manual_tipografico-bg {
+  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/manual1-2_zshsec.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 90vw;
+  height: 500px;
+  flex: 1;
+}
+
+.malba {
+  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/malba1_uhenou.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+  color: white;
+}
+
+.malba-descripcion {
+  background-color: #b56a39;
+  color: white;
+  /* font-weight: 400; */
+  padding-top: 20vh;
 }
 
 /* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-content: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.outline {
+  outline: 2px solid black;
+}
