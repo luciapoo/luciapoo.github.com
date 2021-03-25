@@ -1,250 +1,80 @@
-/*Tipografía */
-@import url("https://use.typekit.net/kmu0pjl.css");
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucía Poo - Comunicación Visual</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-@font-face {
-  font-family: "Sporting Grotesque";
-  src: url("https://res.cloudinary.com/do60veesc/raw/upload/v1615923359/SportingGrotesque-Regular_gkcjos.otf")
-    format("woff2");
-  font-style: normal;
-}
-
-/* Variables */
-:root {
-  --primario: #3b3b3b;
-  --primario-claro: #f3f0ec;
-  --secundario: #6b6b4b;
-  --secundario-claro: #95a147;
-  --terciario: #b56a39;
-  --terciario-claro: #eddfbf;
-  --cuarto: #d9c3df;
-  --bg: #ffffff;
-  --font-textos: "Sporting Grotesque";
-  --font-headings: "kumlien-pro, serif";
-  --h1: 80px;
-  --h2: 81px;
-  --h3: 54px;
-  --h4: 36px;
-  --h5: 24px;
-  --h6: 16px;
-}
-
-/* Base */
-body {
-  font-family: var(--font-textos);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-headings);
-}
-
-h1 {
-  font-size: var(--h1);
-  font-weight: 400;
-}
-
-h2 {
-  font-size: var(--h2);
-  font-weight: 400;
-}
-h3 {
-  font-size: var(--h3);
-  font-weight: 400;
-}
-
-h4 {
-  font-size: var(--h4);
-}
-
-h5 {
-  font-size: var(--h5);
-}
-
-h6 {
-  font-size: var(--h6);
-}
-
-/* Componentes */
-
-.home_screen {
-  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615925219/home_nla6tz.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-}
-.top {
-  display: flex;
-}
-.nav {
-}
-.nav ul {
-}
-.nav ul a {
-  text-decoration: none;
-  line-height: 1.5;
-  color: white;
-}
-.titulo_estatico {
-  color: #3b3b3b;
-  text-align: center;
-  width: 100%;
-}
-.titulo_banner {
-  background-color: blue;
-  max-width: fit-content;
-  margin: 40vh 5vw 0 auto;
-}
-.titulo_banner h2 {
-  color: white;
-}
-.titulo_banner p {
-  color: white;
-}
-
-.manual_tipografico {
-  display: flex;
-  width: 100vw;
-}
-.manual_tipografico-descripcion {
-  flex: 0.1;
-  background-color: #6b6b4b;
-  color: white;
-  font-weight: 400;
-  padding-top: 20vh;
-}
-
-.manual_tipografico-bg {
-  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/manual1-2_zshsec.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 90vw;
-  height: 500px;
-  flex: 1;
-}
-
-.malba {
-  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/malba1_uhenou.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
-  display: flex;
-  flex-direction: row-reverse;
-  flex: 1;
-  color: white;
-}
-
-.malba-descripcion {
-  background-color: #b56a39;
-  color: white;
-  /* font-weight: 400; */
-  padding-top: 20vh;
-}
-
-.app {
-  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923319/wms_hpl0ic.jpg");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(246, 246, 246);
-  background-position: center center;
-  height: 100vh;
-}
-
-.cincoj {
-  /* background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/selva_frilo7.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: column;
-}
-
-.cincoj-imagen {
-  object-fit: cover;
-}
-.cincoj-descripcion {
-  background-color: #3b3b3b;
-  color: white;
-  height: 100%;
-  padding: 40px 20px;
-}
-
-.mundom {
-}
-
-.carrousel {
-  display: flex;
-  width: 30vw;
-  margin: 100px 100px 20px 100px;
-  justify-content: space-between;
-}
-
-/* Utilities */
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  justify-items: center;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid-center {
-  place-content: center;
-}
-
-.mx-auto {
-  margin: 0 auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-.outline {
-  outline: 2px solid black;
-}
+  <body>
+    <div class="home_screen">
+      <div class="top">
+        <nav class="nav">
+          <ul role="list">
+            <li><a href="">HOME</a></li>
+            <li><a href="">WORK</a></li>
+            <li><a href="">ABOUT</a></li>
+          </ul>
+        </nav>
+        <h1 class="titulo_estatico">Lucia Poo</h1>
+      </div>
+      <div class="titulo_banner">
+        <h2>Lucia Poo</h2>
+        <p>Hola soy comunicadora visual</p>
+        <a href="">VER MI TRABAJO</a>
+      </div>
+    </div>
+    <section class="manual_tipografico">
+      <div class="manual_tipografico-descripcion">
+        <h3>Manual Tipográfico</h3>
+        <p>Este proyecto es un manual</p>
+        <a href="">VER TRABAJO</a>
+      </div>
+      <div class="manual_tipografico-bg"></div>
+    </section>
+    <section class="malba">
+      <div class="malba-descripcion">
+        <h3>Malba</h3>
+        <p>Este proyecto es un manual</p>
+        <a href="">VER TRABAJO</a>
+      </div>
+    </section>
+    <div class="app"></div>
+    <section class="cincoj">
+      <div class="cincoj-descripcion">
+        <h3>Cinco Jotas</h3>
+        <p>Este proyecto es un manual</p>
+        <a href="">VER TRABAJO</a>
+      </div>
+      <div class="cincoj-imagen">
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/selva_frilo7.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="mundom">
+      <div class="carrousel">
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922585/revistas_nnm517.jpg"
+        />
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922585/revistas_nnm517.jpg"
+        />
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922585/revistas_nnm517.jpg"
+        />
+      </div>
+      <div class="mundom-descripcion">
+        <h3>Mundo Musical</h3>
+        <p>Este proyecto es un manual</p>
+        <a href="">VER TRABAJO</a>
+      </div>
+    </section>
+  </body>
+</html>
