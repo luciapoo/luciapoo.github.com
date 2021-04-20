@@ -124,7 +124,7 @@ h6 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: ;
   width: 90vw;
   height: 500px;
   flex: 1;
@@ -184,7 +184,11 @@ h6 {
   padding: 40px 20px;
 }
 
-.mundom {
+.mundomdes {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 195px;
+  padding-right: 195px;
 }
 
 .carrousel {
@@ -192,6 +196,15 @@ h6 {
   width: 30vw;
   margin: 100px 100px 20px 100px;
   justify-content: space-between;
+}
+
+.contacto {
+  display: flex;
+}
+
+.contactofoto {
+  max-width: 40%;
+  margin: 167px;
 }
 
 /* Utilities */
