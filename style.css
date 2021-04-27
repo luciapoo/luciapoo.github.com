@@ -7,6 +7,11 @@
     format("woff2");
   font-style: normal;
 }
+ {
+  font-family: "kumlien-pro, serif ";
+  src: url("https://res.cloudinary.com/do60veesc/raw/upload/v1619546385/KULIEMPRO_zguzyt.woff2")
+    format("woff2");
+}
 
 /* Variables */
 :root {
@@ -44,16 +49,16 @@ h6 {
 
 h1 {
   font-size: var(--h1);
-  font-weight: 400;
+  font-weight: 10;
 }
 
 h2 {
   font-size: var(--h2);
-  font-weight: 400;
+  font-weight: 10;
 }
 h3 {
   font-size: var(--h3);
-  font-weight: 400;
+  font-weight: 10;
 }
 
 h4 {
@@ -109,10 +114,11 @@ h6 {
 
 .manual_tipografico {
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
 }
 .manual_tipografico-descripcion {
-  flex: 0.1;
+  /* flex: 0.1; */
   background-color: #6b6b4b;
   color: white;
   font-weight: 400;
@@ -120,34 +126,33 @@ h6 {
 }
 
 .manual_tipografico-bg {
-  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/manual1-2_zshsec.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: ;
-  width: 90vw;
-  height: 500px;
-  flex: 1;
+  background-image: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/manual1-2_zshsec.jpg");
+  background-color: rgb(222, 222, 222);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 910px;
+}
+
+.labana {
+  display: flex;
+}
+.labana-descripcion,
+.labana-img {
+  display: flex;
+  width: 50%;
 }
 
 .malba {
-  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615923315/malba1_uhenou.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
   display: flex;
   flex-direction: row-reverse;
-  flex: 1;
-  color: white;
 }
 
-.malba-descripcion {
-  background-color: #b56a39;
-  color: white;
-  /* font-weight: 400; */
-  padding-top: 20vh;
+.malba-descripcion,
+.malba-img {
+  display: flex;
+  width: 50%;
 }
 
 .app {
