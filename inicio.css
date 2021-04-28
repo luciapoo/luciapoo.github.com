@@ -1,0 +1,249 @@
+/*Tipografía */
+@import url("https://use.typekit.net/kmu0pjl.css");
+
+@font-face {
+  font-family: "Sporting Grotesque";
+  src: url("https://res.cloudinary.com/do60veesc/raw/upload/v1615923359/SportingGrotesque-Regular_gkcjos.otf")
+    format("woff2");
+  font-style: normal;
+}
+ {
+  font-family: "kumlien-pro, serif ";
+  src: url("https://res.cloudinary.com/do60veesc/raw/upload/v1619546385/KULIEMPRO_zguzyt.woff2")
+    format("woff2");
+}
+
+/* Variables */
+:root {
+  --primario: #3b3b3b;
+  --primario-claro: #f3f0ec;
+  --secundario: #6b6b4b;
+  --secundario-claro: #95a147;
+  --terciario: #b56a39;
+  --terciario-claro: #eddfbf;
+  --cuarto: #d9c3df;
+  --bg: #ffffff;
+  --font-textos: "Sporting Grotesque";
+  --font-headings: "kumlien-pro, serif";
+  --h1: 80px;
+  --h2: 81px;
+  --h3: 54px;
+  --h4: 36px;
+  --h5: 24px;
+  --h6: 16px;
+}
+
+/* Base */
+body {
+  font-family: var(--font-textos);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+
+h1 {
+  font-size: var(--h1);
+  font-weight: 10;
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: 10;
+}
+h3 {
+  font-size: var(--h3);
+  font-weight: 10;
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+/* Componentes */
+.home-screen {
+  background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615925219/home_nla6tz.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: white;
+}
+
+.titulo {
+  color: #3b3b3b;
+  text-align: right;
+  line-height: 2;
+  flex: 1.5;
+}
+
+.descripcion {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.descripcion h2 {
+  --h2: 48px;
+  font-size: var(--h2);
+}
+
+.descripcion p {
+  line-height: 2;
+  padding-bottom: 2rem;
+}
+
+.descripcion a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.descripcion a::after {
+  content: url(./assets/arrow.svg);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  transition: background 0.4s ease-in-out;
+}
+
+.descripcion a:hover::after {
+  background: lightskyblue;
+}
+
+/* Manual tipografico */
+.manual-tipografico {
+  display: flex;
+  height: 100vh;
+}
+.manual-tipografico-descripcion {
+  flex: 1;
+  background-color: #6b6b4b;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+.manual-tipografico-descripcion h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.manual-tipografico-descripcion p {
+  font-size: 17px;
+}
+.manual-tipografico-descripcion a {
+  text-transform: uppercase;
+  color: white;
+}
+
+.manual-tipografico-imagen {
+  flex: 3;
+  object-fit: cover;
+}
+
+/* Labana */
+.labana {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+}
+.labana-descripcion {
+  place-self: center;
+}
+.labana-imagen-uno {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Labana */
+.malba {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+}
+.malba > div {
+  background-color: #b56a39;
+}
+.malba-descripcion {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+}
+.malba-imagen-uno {
+  max-width: 300px;
+  margin: auto;
+}
+/* App */
+.app {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background: #6b6b4b;
+  text-align: center;
+}
+.app img {
+  position: relative;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  object-fit: cover;
+}
+.app div {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  width: 220px;
+  height: 100%;
+  background: #6b6b4b;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app:hover img {
+  opacity: 0.9;
+  right: -220px;
+}
+
+.app:hover div {
+  left: 0;
+  opacity: 1;
+}
+
+.app div a {
+  color: white;
+}
+
+/* XYZ */
+/* .XYZ {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+}
+.XYZ-descripcion {
+  place-self: center;
+}
+.XYZ-imagen-uno {
+} */
