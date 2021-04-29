@@ -88,6 +88,7 @@ h6 {
   text-decoration: none;
   line-height: 1.5;
   color: white;
+  position: sticky;
 }
 
 .titulo {
@@ -129,7 +130,7 @@ h6 {
 }
 
 .descripcion a:hover::after {
-  background: lightskyblue;
+  background: #95a147;
 }
 
 /* Manual tipografico */
@@ -138,7 +139,7 @@ h6 {
   height: 100vh;
 }
 .manual-tipografico-descripcion {
-  flex: 1;
+  /* flex: 1; */
   background-color: #6b6b4b;
   color: white;
   display: grid;
@@ -170,12 +171,13 @@ h6 {
 .labana-descripcion {
   place-self: center;
 }
+
 .labana-imagen-uno {
   max-width: 400px;
   margin: auto;
 }
 
-/* Labana */
+/* Malba */
 .malba {
   display: grid;
   grid-auto-flow: column;
@@ -189,6 +191,7 @@ h6 {
   place-content: center;
   width: 100%;
   height: 100%;
+  color: #ffffff;
 }
 .malba-imagen-uno {
   max-width: 300px;
@@ -234,6 +237,57 @@ h6 {
 
 .app div a {
   color: white;
+  text-decoration: none;
+}
+
+/* CincoJ */
+.cincoj {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cincoj > div {
+  background-color: #3b3b3b;
+}
+.cincoj-descripcion {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+/* Carrousel*/
+
+.carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 60px;
+  margin-top: 160px;
+}
+
+.carrousel-imagen-uno {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.carrousel-imagen-dos {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.carrousel-imagen-tres {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.carrousel-descripcion {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 /* XYZ */
