@@ -73,6 +73,10 @@ h6 {
   font-size: var(--h6);
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Componentes */
 .home-screen {
   background: url("https://res.cloudinary.com/do60veesc/image/upload/v1615925219/home_nla6tz.jpg");
@@ -288,6 +292,69 @@ h6 {
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+}
+
+.about {
+  display: flex;
+}
+
+.titulos {
+  display: flex;
+  flex: 3;
+  background-color: lightcyan;
+}
+
+.titulos img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  padding: 80px;
+  padding-right: 20px;
+}
+
+.titulos ul {
+  display: grid;
+  place-content: center;
+  gap: 10px;
+}
+
+.titulos ul li {
+  /* margin-top: -40%; */
+}
+
+.titulos ul li:first-child a,
+.titulos ul li:last-child a {
+  position: relative;
+  transition: all 0.4ms linear;
+}
+.titulos ul li:first-child a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: relative;
+  background: #101010;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.titulos ul li:first-child a:hover:after {
+  width: 600%;
+  left: 0;
+}
+
+.titulos ul li:first-child a:hover {
+}
+.titulos ul li:last-child a:hover {
+}
+
+.contenido {
+  flex: 2;
+  background-color: lightblue;
+  display: grid;
+  place-content: center;
+  padding: 30px;
 }
 
 /* XYZ */
