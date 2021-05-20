@@ -75,6 +75,8 @@ h6 {
 
 a {
   text-decoration: none;
+  color: white;
+  font-family: "kumlien-pro, serif";
 }
 
 /* Componentes */
@@ -87,7 +89,14 @@ a {
   height: 100vh;
   display: flex;
 }
-
+.nav ul {
+  height: auto;
+  /* border: 1px solid; */
+  /* background-color: #b56a39; */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .nav ul li a {
   text-decoration: none;
   line-height: 1.5;
@@ -137,6 +146,23 @@ a {
   background: #95a147;
 }
 
+/*.flecha-container a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+.flecha-container a::after {
+  content: url(./assets/arrow.svg);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  transition: background 0.4s ease-in-out;
+}
+.flecha-container a:hover::after {
+  background: #95a147;
+}
+*/
+
 /* Manual tipografico */
 .manual-tipografico {
   display: flex;
@@ -148,6 +174,7 @@ a {
   color: white;
   display: grid;
   place-content: center;
+  line-height: 85px;
 }
 .manual-tipografico-descripcion h2 {
   font-size: 20px;
@@ -174,6 +201,7 @@ a {
 }
 .labana-descripcion {
   place-self: center;
+  line-height: 53px;
 }
 
 .labana-imagen-uno {
@@ -196,6 +224,7 @@ a {
   width: 100%;
   height: 100%;
   color: #ffffff;
+  line-height: 53px;
 }
 .malba-imagen-uno {
   max-width: 300px;
@@ -259,6 +288,7 @@ a {
   width: 100%;
   height: 100%;
   color: white;
+  line-height: 53px;
 }
 
 /* Carrousel*/
@@ -301,12 +331,10 @@ a {
 .titulos {
   display: flex;
   flex: 3;
-  background-color: lightcyan;
+  background-color: var(--secundario);
 }
 
 .titulos img {
-  width: 400px;
-  height: 400px;
   object-fit: cover;
   padding: 80px;
   padding-right: 20px;
@@ -332,7 +360,7 @@ a {
   bottom: 0;
   content: "";
   display: block;
-  height: 4px;
+  height: 2px;
   left: 50%;
   position: relative;
   background: #101010;
@@ -344,6 +372,23 @@ a {
   left: 0;
 }
 
+.titulos ul li:last-child a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #101010;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.titulos ul li:last-child a:hover:after {
+  width: 600%;
+  left: 0;
+}
+
 .titulos ul li:first-child a:hover {
 }
 .titulos ul li:last-child a:hover {
@@ -351,10 +396,20 @@ a {
 
 .contenido {
   flex: 2;
-  background-color: lightblue;
+  background-color: white;
   display: grid;
   place-content: center;
   padding: 30px;
+}
+
+/* Redes*/
+
+.redes {
+  margin-top: 90px;
+}
+
+hr {
+  size: 10px;
 }
 
 /* XYZ */
