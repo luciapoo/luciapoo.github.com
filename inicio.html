@@ -155,30 +155,52 @@
           width="400px"
         />
         <ul role="list">
-          <li><a href="#">ABOUT ME</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li x-data="showInfo()">
+            <a x-spread="trigger">ABOUT ME</a>
+            <div x-spread="info" class="categoria__info">
+              <div class="contenido">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                culpa natus accusantium maxime, magnam voluptate inventore,
+                perspiciatis ut ea dolor modi sequi, similique cumque molestiae
+                quisquam doloribus dicta quam deleniti?
+              </div>
+            </div>
+          </li>
+          <li x-data="showInfo()">
+            <a x-spread="trigger">CONTACT</a>
+            <div x-spread="info" class="categoria__info">
+              <div class="contenido">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                culpa natus accusantium maxime, magnam voluptate inventore,
+                perspiciatis ut ea dolor modi sequi, similique cumque molestiae
+                quisquam doloribus dicta quam deleniti?
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-
-      <div class="contenido">
-        <div class="contenido-about" hidden>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa
-          natus accusantium maxime, magnam voluptate inventore, perspiciatis ut
-          ea dolor modi sequi, similique cumque molestiae quisquam doloribus
-          dicta quam deleniti?
-        </div>
-        <div class="contenido-contact">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa
-          natus accusantium maxime, magnam voluptate inventore, perspiciatis ut
-          ea dolor modi sequi, similique cumque molestiae quisquam doloribus
-          dicta quam deleniti?
-        </div>
-      </div>
+      <div class="contenido-about"></div>
     </section>
+
     <section class="redes">
-      <hr size="3" width="1900px" color="black" />
+      <hr size="3" width="1450px" color="black" />
+      <p>@luchpoo</p>
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-e60e710f-2deb-4ee8-a334-b7e43d71e8ec"></div>
     </section>
+
+    <section class="menu-final">
+      <hr size="3" width="1450px" color="black" />
+      <p>Thanks for scrollin'</p>
+      <nav class="nav_bottom">
+        <ul role="list">
+          <li><a href="">HOME</a></li>
+          <li><a href="">WORK</a></li>
+          <li><a href="">ABOUT</a></li>
+        </ul>
+      </nav>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
