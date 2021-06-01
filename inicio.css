@@ -36,6 +36,7 @@
 /* Base */
 body {
   font-family: var(--font-textos);
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -89,6 +90,18 @@ a {
   height: 100vh;
   display: flex;
 }
+
+@media screen and (max-width: 415px) {
+  .home-screen {
+    background-position: center top;
+    flex-direction: column;
+    color: black;
+  }
+  .home-screen h1 {
+    display: none;
+  }
+}
+
 .nav ul {
   height: auto;
   /* border: 1px solid; */
@@ -102,6 +115,13 @@ a {
   line-height: 1.5;
   color: white;
   position: sticky;
+}
+
+@media screen and (max-width: 415px) {
+  .nav ul {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .titulo {
@@ -146,23 +166,6 @@ a {
   background: #95a147;
 }
 
-/*.flecha-container a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-}
-.flecha-container a::after {
-  content: url(./assets/arrow.svg);
-  position: absolute;
-  top: 40px;
-  left: 0;
-  transition: background 0.4s ease-in-out;
-}
-.flecha-container a:hover::after {
-  background: #95a147;
-}
-*/
-
 /* Manual tipografico */
 .manual-tipografico {
   display: flex;
@@ -191,6 +194,37 @@ a {
 .manual-tipografico-imagen {
   flex: 3;
   object-fit: cover;
+}
+
+@media screen and (max-width: 415px) {
+  .manual-tipografico {
+    display: flex;
+    flex-direction: column;
+  }
+  .manual-tipografico-descripcion {
+    background-color: #6b6b4b;
+    color: white;
+    /* color: unset; */
+    display: grid;
+    place-content: center;
+    line-height: 85px;
+  }
+  .manual-tipografico-descripcion h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .manual-tipografico-descripcion p {
+    font-size: 17px;
+  }
+  .manual-tipografico-descripcion a {
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .manual-tipografico-imagen {
+    flex: 3;
+    object-fit: cover;
+  }
 }
 
 /* Labana */
@@ -230,6 +264,14 @@ a {
   max-width: 300px;
   margin: auto;
 }
+
+@media screen and (max-width: 415px) {
+  .malba {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* App */
 .app {
   width: 100vw;
@@ -291,6 +333,13 @@ a {
   line-height: 53px;
 }
 
+@media screen and (max-width: 415px) {
+  .cincoj {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* Carrousel*/
 
 .carrousel {
@@ -300,6 +349,7 @@ a {
   grid-gap: 30px;
   margin: 60px;
   margin-top: 160px;
+  margin-bottom: 200px;
 }
 
 .carrousel-imagen-uno {
@@ -323,6 +373,15 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
+
+@media screen and (max-width: 415px) {
+  .carrousel {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ABOUT */
 
 .about {
   position: relative;
@@ -395,7 +454,7 @@ a {
 .titulos ul li:last-child a:hover {
 }
 .contenido {
-  max-width: 50%;
+  max-width: 550px;
   position: absolute;
   margin-left: auto;
   right: 40px;
@@ -407,6 +466,7 @@ a {
   display: grid;
   place-content: center;
   padding: 30px;
+  max-width: 550px;
 }
 
 /* Redes*/
