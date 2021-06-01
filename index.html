@@ -8,126 +8,193 @@
       rel="stylesheet"
       href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="inicio.css" />
   </head>
 
   <body>
-    <div class="home_screen">
-      <div class="top">
-        <nav class="nav">
-          <ul role="list">
-            <li><a href="">HOME</a></li>
-            <li><a href="">WORK</a></li>
-            <li><a href="">ABOUT</a></li>
-          </ul>
-        </nav>
-        <h1 class="titulo_estatico">LUCÍA POO</h1>
-      </div>
-      <div class="titulo_banner">
+    <div class="home-screen">
+      <nav class="nav">
+        <ul role="list">
+          <li><a href="/#home">HOME</a></li>
+          <li><a href="/#work">WORK</a></li>
+          <li><a href="/#about">ABOUT</a></li>
+        </ul>
+      </nav>
+      <h1 class="titulo">LUCÍA POO</h1>
+      <div class="descripcion" id="home">
         <h2>LUCÍA POO</h2>
         <p>Hola soy comunicadora visual</p>
-        <a href="">VER MI TRABAJO</a>
+        <a href="/#work">VER MI TRABAJO</a>
       </div>
     </div>
-    <section class="manual_tipografico">
-      <div class="manual_tipografico-descripcion">
+    <!-- <div class="flecha-container">
+          <a class="flecha-hover" href="#">
+
+          </a>
+        </div> -->
+    <section class="manual-tipografico">
+      <div class="manual-tipografico-descripcion">
         <h3>Manual Tipográfico</h3>
         <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
+        <a href="#">
+          <img src="./assets/arrow.svg" alt="flechita" />
+        </a>
       </div>
-      <div class="manual_tipografico-bg"></div>
+      <!-- <div class="manual-tipografico-bg"></div> -->
+      <img
+        src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/manual1-2_zshsec.jpg"
+        alt="Manual Tipografico"
+        class="manual-tipografico-imagen"
+      />
     </section>
-
     <section class="labana">
       <div class="labana-descripcion">
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922538/cafejpg_nvtfoc.jpg"
+          alt="imagen"
+          class="labana-imagen-uno"
+        />
         <h3>Labana</h3>
         <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
-        <div>
-          <img
-            src="https://res.cloudinary.com/do60veesc/image/upload/v1615922538/cafejpg_nvtfoc.jpg"
-            alt="imagen"
-            class="labana-img"
-          />
-        </div>
+        <a href="#">
+          <img src="./assets/arrowblack.svg" alt="flechita" />
+        </a>
       </div>
       <img
         src="https://res.cloudinary.com/do60veesc/image/upload/v1615922544/ventana_vh5ctl.jpg"
         alt="imagen"
-        class="labana-img"
+        class="labana-imagen-dos"
       />
     </section>
-
     <section class="malba">
-      <div class="Malba-descripcion">
-        <h3>Malba</h3>
-        <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
-      </div>
       <img
         src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/malba1_uhenou.jpg"
         alt="imagen"
-        class="malba-img"
+        class="malba-imagen"
+      />
+      <div>
+        <div class="malba-descripcion">
+          <h3>Malba</h3>
+          <p>Este proyecto es un manual</p>
+          <a href="#">
+            <img src="./assets/arrow.svg" alt="flechita" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="app">
+      <img
+        src="https://res.cloudinary.com/do60veesc/image/upload/v1615923319/wms_hpl0ic.jpg"
+        alt="app"
+      />
+      <div>
+        <a href="#">Where´s my sushi?</a>
+      </div>
+    </section>
+
+    <section class="cincoj">
+      <div>
+        <div class="cincoj-descripcion">
+          <h3>Cinco Jotas</h3>
+          <p>Este proyecto es un manual</p>
+          <a href="#">
+            <img src="./assets/arrow.svg" alt="flechita" />
+          </a>
+        </div>
+      </div>
+      <img
+        src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/selva_frilo7.jpg"
+        alt="imagen"
+        class="cincoj-imagen"
       />
     </section>
 
-    <!-- <div class="app"></div> -->
-    <section class="cincoj">
-      <div class="cincoj-descripcion">
-        <h3>Cinco Jotas</h3>
-        <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
-      </div>
-      <div class="cincoj-imagen">
+    <section class="carrousel" id="work">
+      <figure>
         <img
-          src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/selva_frilo7.jpg"
-          alt=""
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/revistas_ssj0qf.jpg"
+          alt="imagen"
+          class="carrousel-imagen-uno"
         />
-      </div>
+        <figurecaption>
+          <h3>Mundo Musical</h3>
+          <p>Este proyecto es un manual</p>
+        </figurecaption>
+      </figure>
+      <figure>
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/revistas_ssj0qf.jpg"
+          alt="imagen"
+          class="carrousel-imagen-dos"
+        />
+        <figurecaption>
+          <h3>Mundo Musical</h3>
+          <p>Este proyecto es un manual</p>
+        </figurecaption>
+      </figure>
+      <figure>
+        <img
+          src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/revistas_ssj0qf.jpg"
+          alt="imagen"
+          class="carrousel-imagen-tres"
+        />
+        <figurecaption>
+          <h3>Mundo Musical</h3>
+          <p>Este proyecto es un manual</p>
+        </figurecaption>
+      </figure>
     </section>
-    <!-- <section class="mundom">
-      <div class="carrousel">
+
+    <section class="about" id="about">
+      <div class="titulos">
         <img
-          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922585/revistas_nnm517.jpg"
-        />
-        <img
-          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922585/revistas_nnm517.jpg"
-        />
-        <img
-          src="https://res.cloudinary.com/do60veesc/image/upload/v1615922585/revistas_nnm517.jpg"
-        />
-      </div>
-      <section class="mundomdes">
-      <div class="mundom-descripcion">
-        <h3>Mundo Musical</h3>
-        <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
-      </div>
-      </div>
-      <div class="mundom-descripcion2">
-        <h3>Mundo Musical</h3>
-        <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
-      </div>
-      </div>
-      <div class="mundom-descripcion3">
-        <h3>Mundo Musical</h3>
-        <p>Este proyecto es un manual</p>
-        <a href="">VER TRABAJO</a>
-      </div>
-      </section>
-    </section> -->
-    <section class="contacto">
-      <div>
-        <img
-          class="contactofoto"
           src="https://res.cloudinary.com/do60veesc/image/upload/v1615923315/pratik-gupta-l57A9zxd0XI-unsplash_phd56s.jpg"
+          alt=""
+          height="600px"
+          width="400px"
         />
+        <ul role="list">
+          <li x-data="showInfo()">
+            <a x-spread="trigger">ABOUT ME</a>
+            <div x-spread="info" class="categoria__info">
+              <div class="contenido">
+                Soy comunicadora visual, estudie en CENTRO. en la ciudad de
+                México. En diferentes proyectos como el rebranding del consejo
+                coordinador empresarial y Formación Dual Empresarial.
+              </div>
+            </div>
+          </li>
+          <li x-data="showInfo()">
+            <a x-spread="trigger">CONTACT</a>
+            <div x-spread="info" class="categoria__info">
+              <div class="contenido">Email: lpoo@centro.edu.mx</div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="about-descripcion">
-        <h3>About</h3>
-        <p>MI nombre el lucia</p>
-      </div>
+      <div class="contenido-about"></div>
     </section>
+
+    <section class="redes">
+      <hr size="3" width="1450px" color="black" />
+      <p>@luchpoo</p>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-e60e710f-2deb-4ee8-a334-b7e43d71e8ec"></div>
+    </section>
+
+    <section class="menu-final">
+      <hr size="3" width="1450px" color="black" />
+      <p>Thanks for scrollin'</p>
+      <nav class="nav_bottom">
+        <ul role="list">
+          <li><a href="/#home"">HOME</a></li>
+          <li><a href="/#work">WORK</a></li>
+          <li><a href="/#about">ABOUT</a></li>
+        </ul>
+      </nav>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
