@@ -136,6 +136,7 @@ a {
   display: grid;
   place-content: center;
   color: white;
+  padding-right: 60px;
 }
 
 .descripcion h2 {
@@ -177,7 +178,7 @@ a {
   color: white;
   display: grid;
   place-content: center;
-  line-height: 85px;
+  line-height: 45p;
 }
 .manual-tipografico-descripcion h2 {
   font-size: 20px;
@@ -204,10 +205,9 @@ a {
   .manual-tipografico-descripcion {
     background-color: #6b6b4b;
     color: white;
-    /* color: unset; */
     display: grid;
     place-content: center;
-    line-height: 85px;
+    line-height: 10px;
   }
   .manual-tipografico-descripcion h2 {
     font-size: 20px;
@@ -235,7 +235,7 @@ a {
 }
 .labana-descripcion {
   place-self: center;
-  line-height: 53px;
+  line-height: 53px;s
 }
 
 .labana-imagen-uno {
