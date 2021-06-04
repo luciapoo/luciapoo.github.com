@@ -121,6 +121,12 @@ a {
   .nav ul {
     display: flex;
     gap: 80px;
+    color: black;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -213,18 +219,26 @@ a {
 .manual-tipografico-descripcion h2 {
   font-size: 20px;
   font-weight: 400;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .manual-tipografico-descripcion h3 {
   line-height: 1;
   padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .manual-tipografico-descripcion p {
   font-size: 17px;
   line-height: 1.8;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .manual-tipografico-descripcion a {
   text-transform: uppercase;
   color: white;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .manual-tipografico-imagen {
@@ -238,10 +252,11 @@ a {
     flex-direction: column;
   }
   .manual-tipografico-descripcion {
-    background-color: #6b6b4b;
+    /* background-color: #6b6b4b; */
     color: white;
     display: grid;
     place-content: center;
+    padding: 73px;
   }
   .manual-tipografico-descripcion h2 {
     font-size: 20px;
@@ -272,7 +287,7 @@ a {
 }
 .labana-descripcion {
   place-self: unset;
-  line-height: 53px;
+  line-height: px;
   border: 1px solid;
   border-color: white;
   max-width: 400px;
@@ -286,13 +301,18 @@ a {
 .labana-descripcion p,
 .labana-descripcion h3 {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .labana-imagen-uno {
   max-width: 400px;
   margin: auto;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 415px) {
+  .textol {
+    padding: 73px;
+  }
 }
 
 /* Malba */
@@ -328,6 +348,10 @@ a {
   .malba {
     display: flex;
     flex-direction: column;
+  }
+
+  .malba-descripcion {
+    padding: 73px;
   }
 }
 
@@ -399,6 +423,12 @@ a {
   }
 
   .cincoj-descripcion {
+    padding: 73px;
+    line-height: 21px;
+  }
+
+  .cincoj-descripcion h3 {
+    line-height: 60px;
     margin-bottom: 10px;
   }
 }
@@ -441,6 +471,7 @@ a {
   .carrousel {
     display: flex;
     flex-direction: column;
+    margin-top: 58px;
   }
 }
 
@@ -532,6 +563,82 @@ a {
   max-width: 550px;
 }
 
+@media screen and (max-width: 415px) {
+  .about {
+    position: relative;
+  }
+
+  .titulos {
+    background-color: var(--secundario);
+  }
+
+  .titulos img {
+    object-fit: cover;
+    padding: 10px;
+  }
+
+  .titulos ul {
+    place-content: center;
+    gap: 10px;
+  }
+
+  .titulos ul a {
+    margin-top: 30px;
+    color: black;
+  }
+
+  .titulos ul li:first-child a,
+  .titulos ul li:last-child a {
+    transition: all 0.4ms linear;
+  }
+  .titulos ul li:first-child a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #101010;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .titulos ul li:first-child a:hover:after {
+    width: 600%;
+    left: 0;
+  }
+
+  .titulos ul li:last-child a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #101010;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .titulos ul li:last-child a:hover:after {
+    width: 600%;
+    left: 0;
+  }
+
+  .titulos ul li:first-child a:hover {
+  }
+  .titulos ul li:last-child a:hover {
+  }
+  .contenido {
+    margin-left: 12px;
+  }
+  .contenido-about {
+    background-color: white;
+    display: grid;
+    place-content: center;
+    padding: 30px;
+    max-width: 550px;
+  }
+}
+
 /* Redes*/
 
 .redes {
@@ -560,7 +667,21 @@ a {
   text-decoration: none;
   line-height: 1.5;
   color: black;
-  margin-left: 50px;
+  margin-left: 29px;
+}
+
+@media screen and (max-width: 415px) {
+  .nav_bottom ul {
+    display: flex;
+    gap: 10px;
+    color: black;
+  }
+
+  .nav:bottom ul li a {
+    margin-left: 29px;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 /* XYZ */
